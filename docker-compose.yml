@@ -1,6 +1,12 @@
 version: '3'
 
 services:
+  nest-api:
+    image: ms-digital-store
+    restart: always
+    container_name: nest-ms-digital-store
+    ports:
+      - '3000:3000'
   db:
     image: 'postgres:14.3'
     restart: always
